@@ -17,9 +17,9 @@ const auth = require('../middleware/auth');
 
 //Crea un mesero
 router.post("/crear_mesero", meseroController.crearMesero);
-router.get("/obtener_meseros",auth, meseroController.obtenerMeseros);
-router.put("/actualizar_mesero/:id",auth, meseroController.actualizarMesero);
-router.delete("/eliminar_mesero/:id",auth, meseroController.eliminarMesero);
+router.get("/obtener_meseros", meseroController.obtenerMeseros);
+router.put("/actualizar_mesero/", meseroController.actualizarMesero);
+router.delete("/eliminar_mesero/:id", meseroController.eliminarMesero);
 router.post('/autenticar', authController.autenticarMesero);
 
 module.exports = router;
