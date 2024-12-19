@@ -1,0 +1,709 @@
+{
+	"info": {
+		"_postman_id": "496774f8-f4ed-4072-8ed9-44a0ef5b725e",
+		"name": "EVFN-IntegracionAplicaciones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38222760"
+	},
+	"item": [
+		{
+			"name": "Categoria",
+			"item": [
+				{
+					"name": "CrearCategoria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Bebidas\",\r\n  \"descripcion\": \"Bebidas alcohólicas y no alcohólicas\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/crear_categoria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"crear_categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerCategoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/obtener_categoria/6763bf643d0398ebdb141d7d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"obtener_categoria",
+								"6763bf643d0398ebdb141d7d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerCategorias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/obtener_categorias",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"obtener_categorias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarCategoria",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"6763bf643d0398ebdb141d7d\",\r\n    \"nombre\": \"Bebidas Refrescantes\",\r\n    \"descripcion\": \"Bebidas sin alcohol\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/actualizar_categoria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"actualizar_categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarCategoria",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/eliminar_categoria/6763bf643d0398ebdb141d7d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"eliminar_categoria",
+								"6763bf643d0398ebdb141d7d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "CrearCliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Juan Perez\",\r\n  \"correo\": \"juan.perez@example.com\",\r\n  \"telefono\": \"123456789\",\r\n  \"dni\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/crear_cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"crear_cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerCliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/obtener_cliente/6763bf9e3d0398ebdb141d87",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"obtener_cliente",
+								"6763bf9e3d0398ebdb141d87"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarCliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"6763bf9e3d0398ebdb141d87\",\r\n  \"correo\": \"nuevo.correo@example.com\",\r\n  \"telefono\": \"987654321\",\r\n  \"dni\": \"87654321\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/actualizar_cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"actualizar_cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarCliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/eliminar_cliente/6763bf9e3d0398ebdb141d87",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"eliminar_cliente",
+								"6763bf9e3d0398ebdb141d87"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mesero",
+			"item": [
+				{
+					"name": "CrearMesero",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Juan\",\r\n  \"ape_paterno\": \"Peter\",\r\n  \"ape_materno\": \"López\",\r\n  \"telefono\": \"123456789\",\r\n  \"dni\": \"7412589\",\r\n  \"email\": \"raikuaza@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"estado\": \"Activo\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/crear_mesero",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"crear_mesero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerMeseros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/obtener_meseros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"obtener_meseros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarMesero",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"6763be983d0398ebdb141d6f\",\r\n    \"nombre\": \"Jesus\",\r\n    \"telefono\": \"789456123\",\r\n    \"password\": \"nuevoPassword123\",\r\n    \"estado\": false\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/actualizar_mesero",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"actualizar_mesero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarMesero",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/eliminar_mesero/6763be983d0398ebdb141d6f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"eliminar_mesero",
+								"6763be983d0398ebdb141d6f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "autenticar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"raikuaza@gmail.com\",\r\n  \"password\": \"1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/autenticar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"autenticar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orden",
+			"item": [
+				{
+					"name": "CrearOrden",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mesaId\": 1,\r\n    \"platillos\": [\r\n        {\r\n            \"nombre\": \"Tacos al Pastor\",\r\n            \"cantidad\": 2\r\n        },\r\n        {\r\n            \"nombre\": \"Ceviche\",\r\n            \"cantidad\": 1\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/crear_orden",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"crear_orden"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerOrdenMesa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/obtener_orden/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"obtener_orden",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerOrdenesPendientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/obtener_ordenes_pendientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"obtener_ordenes_pendientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerOrdenTodas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/obtener_ordenes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"obtener_ordenes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarOrden",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"674bd4b25f6f661adaa31df5\",\r\n    \"mesaId\": 1,\r\n    \"platillos\": [\r\n        {\r\n            \"nombre\": \"Tacos al Pastor\",\r\n            \"cantidad\": 3\r\n        },\r\n        {\r\n            \"nombre\": \"Ceviche\",\r\n            \"cantidad\": 2\r\n        }\r\n    ],\r\n    \"estado\": \"Pendiente\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/actualizar_orden",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"actualizar_orden"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarEstadoOrden",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"674bd4b25f6f661adaa31df5\",\r\n  \"estado\": \"Entregado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/actualizar_estado_orden",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"actualizar_estado_orden"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarOrden",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000api/eliminar_orden/674bd4b25f6f661adaa31df5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000api",
+							"path": [
+								"eliminar_orden",
+								"674bd4b25f6f661adaa31df5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Platillo",
+			"item": [
+				{
+					"name": "CrearPlatillo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Tacos al Pastor\",\r\n  \"ingredientes\": \"Tortilla, Cerdo, Piña, Cebolla, Cilantro\",\r\n  \"precio\": 25.50,\r\n  \"imagen\": \"https://comedera.com/wp-content/uploads/sites/9/2017/08/tacos-al-pastor-receta.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/crear_platillo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"crear_platillo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearPlatillo2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Ceviche\",\r\n  \"ingredientes\": \"Pescado, Limón, Cebolla, Cilantro, Ají\",\r\n  \"precio\": 30.00,\r\n  \"imagen\": \"https://www.comedera.com/wp-content/uploads/2021/09/Ceviche.jpg\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/crear_platillo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"crear_platillo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerPlatillo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/obtener_platillo/6763bfcd3d0398ebdb141d9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"obtener_platillo",
+								"6763bfcd3d0398ebdb141d9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerPlatillos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/obtener_platillos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"obtener_platillos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarPlatillo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"6763bfd03d0398ebdb141d92\",\r\n  \"nombre\": \"Tacos al Pastor\",\r\n  \"ingredientes\": \"Tortilla, Cerdo, Piña, Cebolla, Cilantro, Salsa Verde\",\r\n  \"precio\": 26.50,\r\n  \"imagen\": \"https://comedera.com/wp-content/uploads/sites/9/2017/08/tacos-al-pastor-receta.jpg\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/actualizar_platillo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"actualizar_platillo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarPlatillo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/eliminar_platillo/6763bfd03d0398ebdb141d92",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"eliminar_platillo",
+								"6763bfd03d0398ebdb141d92"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
